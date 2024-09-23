@@ -130,7 +130,7 @@ export default {
   "KY": "Cayman Islands",
   "KZ": "Kazakhstan",
   "LA": "Laos",
-  "LB": "Lebanon",
+  "LB": "Lebanons",
   "LC": "Saint Lucia",
   "LI": "Liechtenstein",
   "LK": "Sri Lanka",

@@ -486,7 +486,7 @@ class PhoneNumberInput_ extends React.PureComponent {
 					iconComponent={this.CountryIcon}/>
 
 				{/* Phone number `<input/>` */}
-				{/* <InputComponent
+				<InputComponent
 					ref={this.setInputRef}
 					type="tel"
 					autoComplete={autoComplete}
@@ -506,7 +506,7 @@ class PhoneNumberInput_ extends React.PureComponent {
 						'PhoneInputInput',
 						numberInputProps && numberInputProps.className,
 						rest.className
-					)}/> */}
+					)}/>
 			</ContainerComponent>
 		)
 	}
