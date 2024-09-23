@@ -309,6 +309,7 @@ var PhoneNumberInput_ = /*#__PURE__*/function (_React$PureComponent) {
       var onCountryChange = this.props.onCountryChange;
       var defaultCountry = this.props.defaultCountry;
       var selectedCountry = this.state.country;
+      alert('Mounted')
       if (onCountryChange) {
         if (defaultCountry) {
           if (!this.isCountrySupportedWithError(defaultCountry)) {
@@ -325,6 +326,7 @@ var PhoneNumberInput_ = /*#__PURE__*/function (_React$PureComponent) {
     value: function componentDidUpdate(prevProps, prevState) {
       var onCountryChange = this.props.onCountryChange;
       var country = this.state.country;
+      alert('changed')
       // Call `onCountryChange` when user selects another country.
       if (onCountryChange && country !== prevState.country) {
         onCountryChange(country);
