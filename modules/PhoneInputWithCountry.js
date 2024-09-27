@@ -456,7 +456,7 @@ var PhoneNumberInput_ = /*#__PURE__*/function (_React$PureComponent) {
         inputComponent: inputComponent,
         className: classNames('PhoneInputInput cust_input', numberInputProps && numberInputProps.className, rest.className)
       })),
-      React.createElement('label', {className: classNames('cust_label')}, 'Phone Input')
+      React.createElement('label', {className: classNames('cust_label')}, 'Phone Number')
     );
     }
   }], [{
