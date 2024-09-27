@@ -134,7 +134,7 @@ class PhoneNumberInput_ extends React.PureComponent {
 		const { onCountryChange } = this.props
 		let { defaultCountry } = this.props
 		const { country: selectedCountry } = this.state
-		alert("mounted")
+		console.log("mounted1")
 		if (onCountryChange) {
 			if (defaultCountry) {
 				if (!this.isCountrySupportedWithError(defaultCountry)) {
@@ -150,7 +150,7 @@ class PhoneNumberInput_ extends React.PureComponent {
 	componentDidUpdate(prevProps, prevState) {
 		const { onCountryChange } = this.props
 		const { country } = this.state
-		alert("changed")
+		console.log("changed1")
 		// Call `onCountryChange` when user selects another country.
 		if (onCountryChange && country !== prevState.country) {
 			onCountryChange(country)
