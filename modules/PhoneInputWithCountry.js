@@ -309,7 +309,6 @@ var PhoneNumberInput_ = /*#__PURE__*/function (_React$PureComponent) {
       var onCountryChange = this.props.onCountryChange;
       var defaultCountry = this.props.defaultCountry;
       var selectedCountry = this.state.country;
-      console.log('Mounted')
       if (onCountryChange) {
         if (defaultCountry) {
           if (!this.isCountrySupportedWithError(defaultCountry)) {
@@ -326,7 +325,6 @@ var PhoneNumberInput_ = /*#__PURE__*/function (_React$PureComponent) {
     value: function componentDidUpdate(prevProps, prevState) {
       var onCountryChange = this.props.onCountryChange;
       var country = this.state.country;
-      console.log('changed')
       // Call `onCountryChange` when user selects another country.
       if (onCountryChange && country !== prevState.country) {
         onCountryChange(country);
@@ -456,8 +454,10 @@ var PhoneNumberInput_ = /*#__PURE__*/function (_React$PureComponent) {
         disabled: disabled,
         readOnly: readOnly,
         inputComponent: inputComponent,
-        className: classNames('PhoneInputInput', numberInputProps && numberInputProps.className, rest.className)
-      })));
+        className: classNames('PhoneInputInput cust_input', numberInputProps && numberInputProps.className, rest.className)
+      })),
+      React.createElement('label', {className: classNames('cust_label')}, 'Phone Input')
+    );
     }
   }], [{
     key: "getDerivedStateFromProps",
